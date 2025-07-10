@@ -12,7 +12,7 @@ function App() {
 
   return (
     <>
-      <BrowserRouter>
+      <BrowserRouter basename='webtoon'>
         <h1><Link to="/"><img src={naverLogo} alt="" /></Link></h1>
         <Routes>
           <Route path="/" element={<Main userLogin={userLogin} setUserLogin={setUserLogin} />} /> {/* 현재 로그아웃상태야! */}
